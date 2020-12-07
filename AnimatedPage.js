@@ -26,6 +26,10 @@ class AnimatedPage{
         
         this.CREATE_ANIMATIONS_ON_EVERY_PLAY = false;
 
+        this.AFTER_IN_TL_DELAY = 0;
+        this.AFTER_MAIN_TL_DELAY = 3000;
+        this.AFTER_OUT_TL_DELAY = 0;
+
         this.timelines = {
             [ANIMATION_IN]: null,
             [ANIMATION_OUT]: null,
@@ -83,7 +87,10 @@ class AnimatedPage{
 
     onMainTimelineComplete = () => {
         console.log(`${this.id}: main timeline complete`);
-        this.playOutAnimation();
+
+        setTimeout(() => {
+            this.playOutAnimation();
+        },this.AFTER_MAIN_TL_DELAY)
     }
 
 

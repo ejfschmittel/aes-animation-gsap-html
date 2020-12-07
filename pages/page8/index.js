@@ -65,15 +65,10 @@ class Page8 extends AnimatedPage{
 
 
     rotateRow = (el, pushovers) => {
-
         const bounds = getBounds(el)
-        console.log(bounds)
-        const tl = gsap.timeline({onComplete: () => console.log("hello mellow")});
+        const tl = gsap.timeline();
         const w = Math.floor(bounds.width)
         const middle = Math.floor(w * pushovers.length / 2);
-
-        console.log(middle)
-        console.log(w)
 
         tl.set(el, {zIndex: 100})
         tl.to(el, {y: -100, x: `+=${middle}`, duration: .5})
