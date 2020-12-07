@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="main.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/MotionPathPlugin.min.js" integrity="sha512-2vgSeT4mD0azBGIp91Fnho9fbT8ZG8zu5c+mK//TGxj4YNX2mRAwEZHtZsMRwA7ObqH6Vl7mMOdvkzNVTuhUcA==" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+
+
+        <div class="animation-frame" id="animation-container"></div>
+        
+
+
+    </div>
+
+    <script type="module">
+    
+        import PageController from "./PageController.js"
+
+
+        import page1 from "./pages/Page1.js"
+        import page2 from "./pages/Page2.js"
+        import page3 from "./pages/Page3.js"
+        import page4 from "./pages/Page4.js"
+        import page5 from "./pages/Page5.js"
+        import page6 from "./pages/Page6.js"
+        import page7 from "./pages/Page7.js"
+        import page8 from "./pages/Page8.js"
+
+        gsap.registerPlugin(MotionPathPlugin);
+
+
+        const init = async () => {
+                const MyPageController = new PageController("animation-container");
+                await MyPageController.registerPage(page1)
+                await MyPageController.registerPage(page2)
+                await MyPageController.registerPage(page3)
+                await MyPageController.registerPage(page4)
+                await MyPageController.registerPage(page5)
+                await MyPageController.registerPage(page6)
+                await MyPageController.registerPage(page7)
+                 await MyPageController.registerPage(page8)
+            setTimeout(() => {
+                MyPageController.goToPage(7)
+
+            }, 200)
+        }
+
+        init()
+     
+      
+   
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,145 @@
+.p5-container{
+    background: #fff;
+    width: 100%;
+}
+
+.p5-bar{
+    height: 2rem;
+    width: 100%;
+    margin: .3rem 0;
+    background: #aaa;
+
+}
+
+.p5-headline{
+    font-size: 2rem;
+    width: 80%;
+    padding: 1.2rem 0;
+    text-align: end;
+    color: #aaa;
+}
+
+.p5-grid{
+    display: grid;
+
+    height: 70%;
+    
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr 1.5fr;
+    box-sizing: border-box;
+    gap: 1rem;
+}
+
+.p5-subheadline{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p5-labels{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.p5-label{
+    width: 10rem;
+    text-align: center;
+    border-radius: 4rem;
+    background: #fff;
+    margin: .3rem 0;
+    padding: .5rem 0;
+    border: 2px solid #333;
+}
+
+.p5-label--green{
+    background: #9ee39d;
+}
+
+
+.p5-label--red{
+    background: #f08a75;
+}
+
+
+.p5-label--yellow{
+    background: #f6ff7a;
+}
+
+
+.p5-label--blue{
+    background: #abdcff;
+}
+
+#p5-runner{
+    height: 30px;
+    width: 30px;
+    background: #000;
+}
+
+.p5-svg-rect{
+    grid-area: 2 / 1 / 2 / 1; 
+    z-index: 1;
+}
+
+#svg1{
+    grid-area: 1 / 1 / 1/ 1;
+    transform: translateX(50%) translateY(60px);
+}
+
+#svg2{
+    grid-area: 3 / 1 / 3 / 1;
+    transform: translateX(50%) translateY(-60px);
+}
+
+#p5border1{
+    grid-area: 1 / 1 / 1 / 4;
+    border-bottom: 1px dotted #000;
+}
+
+#p5border2{
+    grid-area: 2 / 1 / 2 / 4;
+    border-bottom: 1px dotted #000;
+}
+
+#p5labels1{
+    grid-area: 1 / 1 / 1 / 1;
+}
+
+#p5labels2{
+    grid-area: 2 / 1 / 2 / 1;
+}
+
+#p5labels3{
+    grid-area: 3 / 1 / 3 / 1;
+}
+
+#p5sub1{
+    grid-area: 1 / 3 / 1 / 3;
+}
+
+#p5sub2{
+    grid-area: 2 / 3 / 2 / 3;       
+}
+
+#p5sub3{
+    grid-area: 3 / 3 / 3 / 3; 
+}
+
+#counter-display{
+    padding: 1rem;
+    width: 100px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    background: #000;
+    font-size: 3rem;
+    color: #fff;
+    grid-area: 3 / 1 / 3 / 1;
+}

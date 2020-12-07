@@ -1,0 +1,48 @@
+
+
+<div class="p5-container">
+    <h1 class="p5-headline">Encryption Process</h1>
+    <div class="p5-bar"></div>
+
+    <div id="p5-runner"></div>
+    
+
+    <div class="p5-grid">
+        
+        <div id="counter-display">0</div>
+        <div class="p5-labels" id="p5labels1">
+            <div class="p5-label p5-label--green">AddRoundKey</div>
+        </div>
+       <div class="p5-labels" id="p5labels2">
+            <div class="p5-label p5-label--blue">1-SubBytes</div>
+            <div class="p5-label p5-label--red">2-ShiftRows</div>
+            <div class="p5-label p5-label--yellow">3-MixColumns</div>
+            <div class="p5-label p5-label--green">4-AddRoundKey</div>
+        </div>
+        <div class="p5-labels" id="p5labels3">
+            <div class="p5-label  p5-label--blue">SubBytes</div>
+            <div class="p5-label  p5-label--red">ShiftRows</div>
+            <div class="p5-label  p5-label--green">AddRoundKey</div>
+        </div>
+
+
+        <h3 class="p5-subheadline" id="p5sub1">initial round</h3>
+        <h3 class="p5-subheadline" id="p5sub2">9 main rounds</h3>
+        <h3 class="p5-subheadline" id="p5sub3">final round</h3>
+
+        <div class="p5-border" id="p5border1"></div>
+        <div class="p5-border" id="p5border2"></div>
+
+
+        <div id="svg1">
+        <svg width="200" height=150>
+            <path d="M 0 0 V 0 150" fill="none" stroke-width="5" stroke="black" />
+        </svg>
+        </div>
+        <div id="svg2">
+            <svg width="200" height=200>
+                <path d="M 0 0 V 0 200" fill="none" stroke-width="5" stroke="black" />
+            </svg>
+        </div>
+    </div>
+</div>

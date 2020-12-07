@@ -1,0 +1,54 @@
+#page8{
+    background: red;
+}
+
+#page8 > div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#page8 header{
+    padding: 2rem 0;
+}
+
+
+#page8 h1{
+    padding: 0 2rem;
+    text-align: end;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+
+.my-rect{
+    width: 50px;
+    height: 50px;
+    background: black;
+}
+
+.header-bar{
+    height: 20px;
+    background: #fff;
+    width: 100%;
+}
+
+.p8-body{
+    display: flex;
+    flex: 1;
+}
+
+.p8-body-left{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p8-body-right{
+    flex: 2;
+}
+
+.p8-grid{
+
+}

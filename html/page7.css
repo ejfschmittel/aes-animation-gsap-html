@@ -1,0 +1,151 @@
+#page7{
+    position: relative;
+}
+
+.r-cell{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    background: yellow;
+    border: 1px solid #000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-box{
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 50px 1fr;
+    background: #fff;
+    width: 600px;
+    box-sizing: content-box;
+}
+
+.s-box-hex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+}
+
+.s-box-labels{
+    display: flex;
+}
+
+.s-box-bar{
+    display: flex;
+}
+
+
+.s-box-x{
+    display: flex;
+    border: 1px solid #333;
+    background: #eee;
+}
+
+.s-box-x > div{
+    flex: 1;
+}
+
+.s-box-x .s-box-legend{
+    display: flex;
+    flex-direction: column;
+}
+
+.s-box-x .s-box-label{
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #333;
+    justify-content: center;
+}
+
+.s-box-x .s-box-legend > div{
+    flex: 1;
+    border-bottom: 1px solid #333;
+    text-align: center;
+ }
+
+.s-box-y{
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+    border: 1px solid #333;
+}
+
+.s-box-y > div{
+    flex: 1;
+}
+
+
+.s-box-y .s-box-legend{
+    display: flex;
+}
+
+.s-box-y .s-box-label{
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.s-box-y .s-box-legend > div{
+   flex: 1;
+   border-right: 1px solid #333;
+   text-align: center;
+}
+
+.s-box-container{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+.s-box-container .s-box-cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+}
+
+
+.p7-grid.grid{
+    background: #fff;
+    opacity: 1;
+}
+
+.p7-grid > div{
+    opacity: 1 !important;
+}
+
+.p7-grid .cell{
+    background: yellow;
+    color: #333;
+}
+
+.p7-body{
+    flex: 1;
+    display: flex;
+    width: 100%;
+}
+
+.p7-body-left{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p7-body-right{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page7 > div{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
