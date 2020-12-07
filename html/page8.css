@@ -45,6 +45,16 @@
     align-items: center;
 }
 
+
+#page8 .p8-grid{
+    opacity: 1;
+}
+
+#page8 .p8-grid .cell{
+    color: #333;
+    box-sizing: border-box;
+    width: 5rem;
+}
 .p8-body-right{
     flex: 2;
 }

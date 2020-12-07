@@ -13,7 +13,7 @@ class Page1 extends AnimatedPage{
         const headline2 = document.querySelector("#p1-headline2")
 
         this.headline1Chars = stringAsListOfSpans("Rijandael")
-        this.headline2Chars = stringAsListOfSpans("Cypher")
+        this.headline2Chars = stringAsListOfSpans("Cipher")
 
         this.headline1Chars.map(span => {span.style.opacity = 0; headline1.appendChild(span); })
         this.headline2Chars.map(span => {span.style.opacity = 0;headline2.appendChild(span); })   

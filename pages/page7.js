@@ -158,34 +158,9 @@ class Page7 extends AnimatedPage{
         this.getMainTL().to(c, {background: "white",  duration: .5}, "moveback+=0")
         this.getMainTL().to(r, {background: "white",  duration: .5}, "moveback+=0")
 
-        let current = {val: 1, oldCell: null}
 
 
-        this.getMainTL().add(() => this.createTest())
-       /* this.getMainTL().to(current, {val: 15, duration: 5, ease: "steps(14)", onUpdate: () => {
-          console.log(current.val)
-         /* if(current.val == 16) return;
-          const currCell = p7GridCells[Math.floor(current.val)]
-          const string = currCell.innerHTML
-          const firstHex = this.hexToInt(string[0])
-          const secondHex = this.hexToInt(string[1])
-
-          if(val)
-
-         
-          const cell = this.cells[(firstHex * 16) + secondHex]
-
-         
-          currCell.style.background = "orange";
-          cell.style.background = "orange";
-          //currCell.innerHTML = cell.innerHTML;
-        }})*/
-
-
-
-     
-
-        
+        this.getMainTL().add(() => this.createTest())        
     }
 
     createTest(delay=.5){

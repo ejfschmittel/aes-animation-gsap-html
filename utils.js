@@ -130,3 +130,60 @@ export const createSubstitutionTable = () => {
 
     return container;
 }
+
+
+export const hexStringToInt = (hex) => {
+    return parseInt(hex.replace(/^#/, ''), 16);
+}
+
+
+export const getBounds = (el) => {
+    if (typeof el === 'string' || el instanceof String)
+        el = document.querySelector(el)
+
+    const rect = el.getBoundingClientRect();
+    return {
+        x: rect.x + window.scrollX,
+        y: rect.y + window.scrollY,
+        left: rect.left + window.scrollX,
+        top: rect.top + window.scrollY,
+        width: rect.width,
+        height: rect.height,
+    };
+}
+
+export const getAbsoluteOffset = (el, parent) => {
+    const e = getBounds(el)
+    const p = getBounds(parent)
+
+    return {
+        x: e.x -p.x,
+        y: e.y - p.y, 
+        ...e,
+    }
+}
+
+export const getRelativeOffset = (element1, element2) => {
+    const el1 = getBounds(element1)
+    const el2 = getBounds(element2)
+
+    return {
+        x: el2.x - el1.x,
+        y:el2.y -el1.y,
+        el1,
+        el2,
+    }
+}
+
+export const getCenterAboveOffset = (element1, element2, offsetTop=20) => {
+    const el1 = getBounds(element1)
+    const el2 = getBounds(element2)
+
+    
+    return {
+        x: el2.x - el1.x + (el2.width/2) - (el1.width/2),
+        y:el2.y -el1.y + -el1.height - offsetTop,
+        el1,
+        el2,
+    }
+}
