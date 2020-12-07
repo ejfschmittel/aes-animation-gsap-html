@@ -1,11 +1,11 @@
 
 
-import AnimatedPage from "../AnimatedPage.js"
-import {createSVGRoundedRect} from "../utils.js"
+import AnimatedPage from "../../AnimatedPage.js"
+import {createSVGRoundedRect} from "../../utils.js"
 
 class Page5 extends AnimatedPage{
     constructor(id){
-        super(id, "page5.html", "html/page5.css");
+        super(id);
     }
 
    

@@ -1,11 +1,11 @@
 
 
-import AnimatedPage from "../AnimatedPage.js"
+import AnimatedPage from "../../AnimatedPage.js"
 
 
 class Page4 extends AnimatedPage{
     constructor(id){
-        super(id, "page4.html", "html/page4.css");
+        super(id);
     }
 
    

@@ -23,42 +23,20 @@
     <script type="module">
     
         import PageController from "./PageController.js"
-
-
-        import page1 from "./pages/Page1.js"
-        import page2 from "./pages/Page2.js"
-        import page3 from "./pages/Page3.js"
-        import page4 from "./pages/Page4.js"
-        import page5 from "./pages/Page5.js"
-        import page6 from "./pages/Page6.js"
-        import page7 from "./pages/Page7.js"
-        import page8 from "./pages/Page8.js"
+        import {Page1, Page2, Page3, Page4, Page5, Page6, Page7, Page8} from "./pages/index.js"
 
         gsap.registerPlugin(MotionPathPlugin);
 
-
         const init = async () => {
-                const MyPageController = new PageController("animation-container");
-                await MyPageController.registerPage(page1)
-                await MyPageController.registerPage(page2)
-                await MyPageController.registerPage(page3)
-                await MyPageController.registerPage(page4)
-                await MyPageController.registerPage(page5)
-                await MyPageController.registerPage(page6)
-                await MyPageController.registerPage(page7)
-                // await MyPageController.registerPage(page8)
-            setTimeout(() => {
-                MyPageController.goToPage(6)
+            const MyPageController = new PageController("animation-container");
+            MyPageController.registerPages(Page1, Page2, Page3, Page4, Page5, Page6, Page7, Page8)
 
+            setTimeout(() => {
+                MyPageController.goToPage(7)
             }, 200)
         }
 
         init()
-     
-      
-   
-        
-    </script>
-    
+    </script> 
 </body>
 </html>

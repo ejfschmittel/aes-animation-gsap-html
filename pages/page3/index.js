@@ -1,11 +1,11 @@
 
 
-import AnimatedPage from "../AnimatedPage.js"
-import {create4By4} from "../utils.js"
+import AnimatedPage from "../../AnimatedPage.js"
+import {create4By4} from "../../utils.js"
 
 class Page3 extends AnimatedPage{
     constructor(id){
-        super(id, "page3.html", "html/page3.css");
+        super(id);
         this.FADE_IN_TIME = 0;
   
     }

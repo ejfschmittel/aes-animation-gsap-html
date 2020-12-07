@@ -1,12 +1,10 @@
 
 
-import AnimatedPage from "../AnimatedPage.js"
+import AnimatedPage from "../../AnimatedPage.js"
 
 class Page2 extends AnimatedPage{
-    constructor(id, htmlPath){
-        super(id, htmlPath);
-    
-        this.init();
+    constructor(id){
+        super(id);
     }
 
     generateBinary = (count, length=9) => {
@@ -69,4 +67,4 @@ class Page2 extends AnimatedPage{
 
 }
 
-export default new Page2("page2", "page2.html");
+export default new Page2("page2");

@@ -1,11 +1,11 @@
 
 
-import AnimatedPage from "../AnimatedPage.js"
-import { create4By4, getBounds, getAbsoluteOffset, getRelativeOffset} from "../utils.js"
+import AnimatedPage from "../../AnimatedPage.js"
+import { create4By4, getBounds} from "../../utils.js"
 
 class Page8 extends AnimatedPage{
     constructor(id){
-        super(id, "page8.html", "html/page8.css");
+        super(id);
         this.CREATE_ANIMATIONS_ON_EVERY_PLAY = true;
     }
 

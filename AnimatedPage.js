@@ -19,9 +19,7 @@ class AnimatedPage{
 
 
 
-    constructor(id, htmlPath, cssPath=null){
-        this.htmlPath = htmlPath;
-        this.cssPath = cssPath;
+    constructor(id){
         this.id = id;
         this.page = null;
         this.FADE_IN_TIME = 0.5;
@@ -91,13 +89,13 @@ class AnimatedPage{
 
     loadCss = () => {
        
-        if(this.cssPath){
-            console.log("loading css")
-            var link = document.createElement('link');
-            link.rel = 'stylesheet';
-            link.href = this.cssPath;
-            document.head.appendChild(link);
-        }    
+   
+        //console.log("loading css")
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = `pages/${this.id}/style.css`;
+        document.head.appendChild(link);
+        
     }
 
 
@@ -150,7 +148,7 @@ class AnimatedPage{
     loadHTML = () => new Promise((resolve, reject) => {
         try{
         var xhr= new XMLHttpRequest();
-        xhr.open('GET', `./html/${this.htmlPath}`, true);
+        xhr.open('GET', `./pages/${this.id}/page.html`, true);
         xhr.onreadystatechange= function() {
 
             if (this.readyState!==4) return;

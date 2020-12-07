@@ -1,7 +1,7 @@
 
 
-import AnimatedPage from "../AnimatedPage.js"
-import {createSubstitutionTable, create4By4, getBounds, getAbsoluteOffset, getRelativeOffset, getCenterAboveOffset, hexStringToInt} from "../utils.js"
+import AnimatedPage from "../../AnimatedPage.js"
+import {createSubstitutionTable, create4By4, getBounds, getAbsoluteOffset, getCenterAboveOffset, hexStringToInt} from "../../utils.js"
 
 
 /*
@@ -21,7 +21,7 @@ import {createSubstitutionTable, create4By4, getBounds, getAbsoluteOffset, getRe
 
 class Page7 extends AnimatedPage{
     constructor(id){
-        super(id, "page7.html", "html/page7.css");
+        super(id);
         this.CREATE_ANIMATIONS_ON_EVERY_PLAY = true;
     }
 

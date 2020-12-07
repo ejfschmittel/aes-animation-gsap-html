@@ -64,6 +64,12 @@ class PageController {
         this.renderPageControlls();
     }
 
+    registerPages = async (...animationPages) => {
+        await Promise.all(animationPages.map(async (page) => {
+            await this.registerPage(page)
+        }));
+    }
+
     goToPage(pageNum){
         console.log("go to page" + pageNum)
         if(pageNum < 0 || pageNum >= this.pages.length) return
