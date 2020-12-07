@@ -121,6 +121,7 @@
 .p7-grid .cell{
     background: yellow;
     color: #333;
+    width: 5rem;
 }
 
 .p7-body{

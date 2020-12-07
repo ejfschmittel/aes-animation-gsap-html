@@ -157,9 +157,9 @@ export const getAbsoluteOffset = (el, parent) => {
     const p = getBounds(parent)
 
     return {
-        x: e.x -p.x,
-        y: e.y - p.y, 
         ...e,
+        x: (e.x -p.x),
+        y: (e.y - p.y), 
     }
 }
 
